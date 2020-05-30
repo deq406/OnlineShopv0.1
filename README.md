@@ -4,9 +4,9 @@ Method       |      URL     |     Body    | Description |
 ------------ | -------------|-------------|-------------|
 GET |https://localhost:44356/auth/authorize|JWT model|Authorize the user by JWT.
 POST|https://localhost:44356/auth/authentificate|User model|Authentificate the user by creating JWT.
-DELETE|https://localhost:44356/api/auth/delete|User model  |Deletes the user(password and login are required).
-PUT|https://localhost:44356/api/auth/update|	2 users tuple|Update the user by changing property values. Item1 represents OldUser(old login and password are required), and Item2 representes NewUser(all changes are here).
-POST|https://localhost:44356/api/auth/create|	User model|Create a single user. Login(unique, length: [2;20]) and password(length: [5;100]) are required.
+DELETE|https://localhost:44356/auth/delete|User model  |Deletes the user(password and login are required).
+PUT|https://localhost:44356/auth/update|	2 users tuple|Update the user by changing property values. Item1 represents OldUser(old login and password are required), and Item2 representes NewUser(all changes are here).
+POST|https://localhost:44356/auth/create|	User model|Create a single user. Login(unique, length: [2;20]) and password(length: [5;100]) are required.
 
 # UserController
 Method       |      URL     |     Body    | Description |
