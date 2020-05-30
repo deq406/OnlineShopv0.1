@@ -30,7 +30,7 @@ namespace Online_Shop.Models
                 .HasKey(u => u.Login);
 
             modelBuilder.Entity<UserBasket>()
-                .HasKey(b => b.UserLogin);
+                .HasKey(b => b.UserID);
 
             modelBuilder.Entity<UserBasket>()
                 .HasOne(b => b.User)
@@ -42,10 +42,6 @@ namespace Online_Shop.Models
                 .WithMany(b => b.UserBaskets)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            //modelBuilder.Entity<UserBasket>()
-            //    .HasOne(b => b.Item)
-            //    .WithMany(b => b.UserBaskets)
-            //    .OnDelete(DeleteBehavior.Cascade);
                 
             modelBuilder.Entity<User>()
                 .HasOne(u => u.JWT)

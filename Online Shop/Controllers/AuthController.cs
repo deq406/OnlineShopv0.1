@@ -9,16 +9,21 @@ using Online_Shop.Models.Interfaces;
 
 namespace Online_Shop.Controllers
 {
+    [ServiceFilter(typeof(LogFilter))]
     [ApiController]
     [Route("[controller]")]
     public class AuthController : ControllerBase
     {
         private readonly ApplicationContext _db;
+        private  ILogger _logger;
 
-        public AuthController(ApplicationContext context)
+        public AuthController(ApplicationContext context, ILogger<AuthController> logger)
         {
             _db = context;
+            _logger = logger;
+            
         }
+       
         
         [HttpPost("create")]
         public ActionResult CreateUser([FromBody]User user)
@@ -31,10 +36,13 @@ namespace Online_Shop.Controllers
             user.PasswordSalt = SecurityController.GetSalt();
             user.Password = SecurityController.GetHash(user.Password + user.PasswordSalt);
             user.Role = (int)Roles.User;
+            user.Id = Guid.NewGuid();
 
             _db.Users.Add(user);
+            _logger.LogInformation("User have been registered");
             _db.SaveChanges();
             return new ObjectResult(user);
+            
         }
 
         [HttpPut("update")]

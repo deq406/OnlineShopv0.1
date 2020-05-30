@@ -61,11 +61,12 @@ namespace Online_Shop.Controllers
                 //    continue;
                 var ub = new UserBasket
                 {
-                    UserLogin = userFromDB.Login,
-                    BasketId = itemFromDB.ID
+                    ID=Guid.NewGuid(),
+                    UserID = userFromDB.Id,
+                    BasketId = itemFromDB.ID,
+                    UserLogin = userFromDB.Login
                 };
-                userFromDB.UserBaskets.Add(ub);
-                itemFromDB.UserBaskets.Add(ub);
+                _db.UserBaskets.Add(ub);
                
             }
             _db.SaveChanges();

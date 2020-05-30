@@ -144,7 +144,16 @@ C:\Users\Egor\source\repos\Online Shop\Online Shop\bin\Debug\netcoreapp3.1\ru\Mi
 C:\Users\Egor\source\repos\Online Shop\Online Shop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Egor\source\repos\Online Shop\Online Shop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Egor\source\repos\Online Shop\Online Shop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Egor\source\repos\Online Shop\Online Shop\obj\Debug\netcoreapp3.1\Online Shop.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Egor\source\repos\Online Shop\Online Shop\obj\Debug\netcoreapp3.1\Online Shop.dll
 C:\Users\Egor\source\repos\Online Shop\Online Shop\obj\Debug\netcoreapp3.1\Online Shop.pdb
 C:\Users\Egor\source\repos\Online Shop\Online Shop\obj\Debug\netcoreapp3.1\Online Shop.csprojAssemblyReference.cache
+C:\Users\Egor\source\repos\Online Shop\Online Shop\bin\Debug\netcoreapp3.1\NLog.config
+C:\Users\Egor\source\repos\Online Shop\Online Shop\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Users\Egor\source\repos\Online Shop\Online Shop\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+C:\Users\Egor\source\repos\Online Shop\Online Shop\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+C:\Users\Egor\source\repos\Online Shop\Online Shop\bin\Debug\netcoreapp3.1\Elasticsearch.Net.dll
+C:\Users\Egor\source\repos\Online Shop\Online Shop\bin\Debug\netcoreapp3.1\NLog.Targets.ElasticSearch.dll
+C:\Users\Egor\source\repos\Online Shop\Online Shop\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Egor\source\repos\Online Shop\Online Shop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Egor\source\repos\Online Shop\Online Shop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Egor\source\repos\Online Shop\Online Shop\obj\Debug\netcoreapp3.1\Online Shop.MvcApplicationPartsAssemblyInfo.cache

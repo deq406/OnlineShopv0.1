@@ -41,6 +41,14 @@ namespace Online_Shop.Controllers
                 Tag = item.Tag
 
             };
+            var itemBasket = new Basket
+            {
+                ID = Guid.NewGuid(),
+                Name = item.Name,
+                Price = item.Price,
+                Amount = 1,
+            };
+            _db.Baskets.Add(itemBasket);
             _db.Items.Add(newItem);
             _db.SaveChanges();
             return Ok(newItem);

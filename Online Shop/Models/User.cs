@@ -24,6 +24,7 @@ namespace Online_Shop.Models.Interfaces
         
         public int Role { get; set; }
 
+        public Guid Id { get; set; }
         public virtual IList<UserBasket> UserBaskets { get; set; }
 
         public User()

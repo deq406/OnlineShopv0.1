@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Online_Shop.Models;
 
 namespace Online_Shop.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    partial class ApplicationContextModelSnapshot : ModelSnapshot
+    [Migration("20200527170314_Databasev0.3")]
+    partial class Databasev03
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -121,9 +123,6 @@ namespace Online_Shop.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("GoodsID")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("ID")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("UserLogin")
